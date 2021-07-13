@@ -62,13 +62,13 @@ function getTrianglePerimeter(){
 
  function getCircleArea() {
     let radio_value = circle_input.value;
-    let resultado = areaCirculo(radio_value);
+    let resultado = areaCirculo(radio_value).toFixed(2);
     circle_area_result.innerHTML = `Área: ${resultado}`
  }
 
  function getCirclePerimeter(){
      let radio_value = circle_input.value;
-     let resultado = perimetroCirculo(radio_value);
+     let resultado = perimetroCirculo(radio_value).toFixed(2);
      circle_perimeter_result.innerHTML = `Perímetro: ${resultado}`
  }
  console.groupEnd();

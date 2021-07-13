@@ -1,5 +1,9 @@
 @import "./componentes/config";
 
+h1 {
+    font-family: $font;
+    text-align: center;
+}
 .figures-container {
     width: 100%;
     padding: 20px;

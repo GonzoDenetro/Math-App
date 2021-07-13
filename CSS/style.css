@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
 .figures-container {
   width: 100%;
   padding: 20px;
