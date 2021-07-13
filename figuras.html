@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Math App</title>
 </head>
 <body>
+    <header>
+        <h1>Math App/h1>
+        <nav></nav>
+    </header>
+    <main>
+        <section>
+            <div class="figure">
+                <div class="figure__header">
+                    <span><i class="far fa-square"></i></span>
+                    <h2 class="figure__header--title">Cuadrado</h2>
+                </div>
+                <form class="figure__form">
+                    <label for="square_input" class="figure__form--label">¿Cuánto mide cada lado de cuadrado?</label>
+                    <div class="figure__inputs-container">
+                        <input type="number" name="" id="square_input" class="figure__input">
+                    </div>
+                    <div class="figure__button-container">
+                        <button type="button" onclick="getSquareArea()"> Calcular área</button>
+                        <button type="button" onclick="getSquarePerimeter()">Calcular perímetro</button>
+                    </div>
+                    <div class="figure__results-container">
+                        <p id="area_square_result" class="figure__results"></p>
+                        <p id="perimeter_square_result"></p>
+                    </div>
+                </form>
+            </div>
+            <div class="figure">
+                <div class="figure__header">
+                    <span>
+                        <i class="fas fa-play outside-triangle">
+                            <i class="fas fa-play inside-triangle"></i>
+                        </i>
+                    </span>
+                    <h2 class="figure__header--title">Triángulo</h2>
+                </div>
+                <form class="figure__form">
+                    <label for="triangle_input" class="figure__form--label">¿Cuánto mide cada lado de tu triángulo?</label>
+                    <div class="figure__inputs-container">
+                        <input type="number" name="" id="triangle_input_sideA" class="figure__input" placeholder="Lado A">
+                        <input type="number" name="" id="triangle_input__sideB" class="figure__input" placeholder="Lado B">
+                        <input type="number" name="" id="triangle_input__Base" class="figure__input" placeholder="Base">
+                    </div>
+                    <div class="figure__button-container">
+                        <button type="button" onclick="getTriangleArea()"> Calcular área</button>
+                        <button type="button" onclick="getTrianglePerimeter()">Calcular perímetro</button>
+                    </div>
+                    <div class="figure__results-container">
+                        <p id="area_triangle_result" class="figure__results"></p>
+                        <p id="perimeter_triangle_result" class="figure__results"></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
     <script src="figuras.js"></script>
 </body>
 </html>
