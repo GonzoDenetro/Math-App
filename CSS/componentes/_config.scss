@@ -1,0 +1,31 @@
+$red-color: #FE5F55;
+$orange: #FFB700;
+$light-blue: #CDEDF6;
+$white: #FDFFFF;
+$gray: #666B6A;
+$black: #2F2F2F;
+
+$font: 'Poppins', sans-serif;
+
+@mixin box(){
+    padding: 14px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 7px 1px #757070b0;
+    border: 3px solid rgba($gray,  .2);
+}
+
+@function getREM($size){
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+@mixin font-size($size){
+    font-size: $size;
+    font-size: getREM($size);
+    line-height: getREM($size)*1.5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.figures-container {
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.figure {
+  height: 340px;
+  padding: 14px;
+  border-radius: 20px;
+  box-shadow: 1px 2px 7px 1px #757070b0;
+  border: 3px solid rgba(102, 107, 106, 0.2);
+}
+.figure__header {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+}
+.figure__header--title {
+  margin-left: 8px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #FDFFFF;
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+}
+.figure__input {
+  width: 90%;
+  height: 28px;
+  margin: 12px;
+  padding: 2px 20px;
+  border: 2px solid rgba(253, 255, 255, 0.4);
+  outline: none;
+  background-color: rgba(253, 255, 255, 0.4);
+  border-radius: 20px;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.figure__button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.figure__button-container button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #FDFFFF;
+  border: none;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+.figure__results-container {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.figure__results-container .figure__results {
+  font-family: "Poppins", sans-serif;
+  color: #2F2F2F;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+
+.figure__form--label {
+  font-family: "Poppins", sans-serif;
+  color: #FDFFFF;
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.fa-square,
+.fa-circle {
+  color: #FDFFFF;
+  font-weight: 300;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+.triangles-icons-container {
+  position: relative;
+}
+
+.fa-play {
+  transform: rotate(-90deg);
+}
+
+.outside-triangle {
+  position: relative;
+  color: #666B6A;
+  font-size: 30px;
+}
+
+.inside-triangle {
+  color: #CDEDF6;
+  font-size: 20px;
+  position: absolute;
+  top: 20%;
+  left: 16%;
+}
+
+.square-box {
+  background-color: #FE5F55;
+}
+
+.triangle-box {
+  background-color: #CDEDF6;
+  height: 420px;
+}
+.triangle-box .triangle-title {
+  color: #2F2F2F;
+}
+.triangle-box .triangle-label {
+  color: #666B6A;
+}
+
+.circle-box {
+  background-color: #FFB700;
+}
+
+/*# sourceMappingURL=style.css.map */
