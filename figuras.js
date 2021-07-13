@@ -72,3 +72,12 @@ function getTrianglePerimeter(){
      circle_perimeter_result.innerHTML = `Perímetro: ${resultado}`
  }
  console.groupEnd();
+
+ /* 
+const trianguloIsosceles = (ladoA, LadoB, Base) => {
+    if(ladoA == LadoB && LadoB !== Base){
+        let altura = Math.sqrt((Base / 2) **2 + ladoA **2).toFixed(2);
+        console.log(`La altura de tu triángulo isosceles es: ${altura}`)
+    }   
+}
+trianguloIsosceles(18, 18, 8) */
