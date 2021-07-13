@@ -1,9 +1,18 @@
+const PI = Math.PI;
 const square_input = document.querySelector("#square_input");
 const square_area_result = document.querySelector("#area_square_result");
 const square_perimeter_result = document.querySelector("#perimeter_square_result");
+
 const triangle_sideA = document.querySelector("#triangle_input_sideA");
 const trinagle_sideB = document.querySelector("#triangle_input__sideB");
 const triangle_base = document.querySelector("#triangle_input__Base");
+const triangle_area_result = document.querySelector("#area_triangle_result");
+const triangle_perimeter_result = document.querySelector("#perimeter_triangle_result");
+
+const circle_input = document.querySelector("#circle_input");
+const circle_area_result = document.querySelector("#area_circle_result");
+const circle_perimeter_result = document.querySelector("#perimeter_circle_result");
+
 
 //Cuadrado
 const perimetroCuadrado = lado => lado * 4;
@@ -20,6 +29,7 @@ function getSquarePerimeter() {
     square_perimeter_result.innerHTML = `Perímetro: ${resultado} cm`
 }
  
+
 //Triángulo 
  console.group("Triángulo")
  const perimetroTriangulo = (lado1, lado2, base) => lado1 + lado2 + base; 
@@ -33,13 +43,32 @@ function getTriangleArea(){
     let value_sideA = Number(triangle_sideA.value);
     let value_base = Number(triangle_base.value);
     let resultado = areaTriangulo(value_sideA, value_base);
-    console.log(resultado)
+    triangle_area_result.innerHTML = `Área: ${resultado}`
 }
+
+function getTrianglePerimeter(){
+    let value_sideA = Number(triangle_sideA.value);
+    let value_sideB = Number(trinagle_sideB.value);
+    let value_base = Number(triangle_base.value);
+    let resultado = perimetroTriangulo(value_sideA, value_sideB, value_base);
+    triangle_perimeter_result.innerHTML = `Perímetro: ${resultado}`
+}
+
 
 //Circulo 
  console.group("Circulo")
- const PI = Math.PI;
-
  const perimetroCirculo = radio => PI * (radio * 2);
  const areaCirculo = radio => PI * (radio **2);
+
+ function getCircleArea() {
+    let radio_value = circle_input.value;
+    let resultado = areaCirculo(radio_value);
+    circle_area_result.innerHTML = `Área: ${resultado}`
+ }
+
+ function getCirclePerimeter(){
+     let radio_value = circle_input.value;
+     let resultado = perimetroCirculo(radio_value);
+     circle_perimeter_result.innerHTML = `Perímetro: ${resultado}`
+ }
  console.groupEnd();

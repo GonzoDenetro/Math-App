@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Math App/h1>
+        <h1>Math App</h1>
         <nav></nav>
     </header>
     <main>
@@ -60,6 +60,29 @@
                     </div>
                 </form>
             </div>
+            <div class="figure">
+                <div class="figure__header">
+                    <span>
+                        <i class="far fa-circle"></i>
+                    </span>
+                    <h2 class="figure__header--title">Círculo</h2>
+                </div>
+                <form class="figure__form">
+                    <label for="circle_input" class="figure__form--label">¿Cuánto mide el radio de tu círculo?</label>
+                    <div class="figure__inputs-container">
+                        <input type="number" name="" id="circle_input" class="figure__input" placeholder="Radio...">
+                    </div>
+                    <div class="figure__button-container">
+                        <button type="button" onclick="getCircleArea()"> Calcular área</button>
+                        <button type="button" onclick="getTrianglePerimeter()">Calcular perímetro</button>
+                    </div>
+                    <div class="figure__results-container">
+                        <p id="area_circle_result" class="figure__results"></p>
+                        <p id="perimeter_circle_result" class="figure__results"></p>
+                    </div>
+                </form>
+            </div>
+            
         </section>
     </main>
     <script src="figuras.js"></script>
