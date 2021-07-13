@@ -4,37 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/discount.css">
     <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./CSS/discount.css">
-        <title>Document</title>
     </head>
     <body>
         <header>
-
+            <h1>Math App</h1>
         </header>
         <section>
             <div>
                 <form >
-                    <label for="product_price">¿Cuál es el precio de tu producto?</label>
-                    <input type="number" id="product_price">
-                    <label for="product_discount">¿Cuál es el descuento de tu producto?</label>
-                    <input type="number" id="product_discount">
-                    <button type="button" onclick="calcularPrecio()">Calcular Precio</button>
+                    <label for="product_price" class="input_label">Precio de tu producto</label>
+                    <div class="input-container">
+                        <span>$</span>
+                        <input type="number" id="product_price" class="input">
+                    </div>
+                    <label for="product_discount" class="input_label">Descuento de tu producto</label>
+                    <div class="input-container">
+                        <input type="number" id="product_discount" class="input">
+                        <span>%</span>    
+                    </div>
+                    <button class="button" type="button" onclick="calcularPrecio()">Calcular Precio</button>
                 </form>
-                <div>
+                <div class="result-container">
                     <p id="resultado"></p>
+                    <p id="descripcion"></p>
                 </div>
             </div>
         </section>

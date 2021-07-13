@@ -4,4 +4,121 @@
   box-sizing: border-box;
 }
 
+/* Media Queries Mixin
+**********************/
+h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: #FFB700;
+}
+section div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  section div {
+    width: 100%;
+    flex-direction: row;
+  }
+}
+
+form {
+  width: 90%;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #FDFFFF;
+  border-radius: 10px;
+}
+@media only screen and (min-width: 768px) {
+  form {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.input_label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #666B6A;
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 2.8125rem;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.input-container .input {
+  width: 150px;
+  height: 80px;
+  padding: 10px;
+  margin: 0 auto;
+  border: none;
+  text-align: center;
+  outline: royalblue;
+  background-color: rgba(47, 47, 47, 0.1);
+  color: #FFB700;
+  border-radius: 10px;
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+}
+.input-container span {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: #FFB700;
+}
+
+.button {
+  width: 120px;
+  padding: 6px 12px;
+  margin: 16px auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background-color: #FFB700;
+  color: #FDFFFF;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.result-container {
+  width: 90%;
+  padding: 20px;
+  text-align: center;
+  background-color: #FFB700;
+}
+.result-container p {
+  font-family: "Poppins", sans-serif;
+  color: #FDFFFF;
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 2.8125rem;
+}
+@media only screen and (min-width: 768px) {
+  .result-container {
+    width: 50%;
+    height: 100%;
+  }
+}
+
 /*# sourceMappingURL=discount.css.map */
