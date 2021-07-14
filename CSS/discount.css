@@ -6,9 +6,35 @@
 
 /* Media Queries Mixin
 **********************/
+header {
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   font-family: "Poppins", sans-serif;
   text-align: center;
+}
+
+.nav {
+  width: 100%;
+  padding: 10px;
+}
+.nav__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.nav__container--item {
+  list-style: none;
+}
+.nav__container--item a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #FFB700;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
 }
 
 section {
@@ -17,14 +43,19 @@ section {
   padding: 20px;
   background-color: #FFB700;
 }
-section div {
+@media only screen and (min-width: 768px) {
+  section {
+    height: 100vh;
+  }
+}
+section .form-container {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 @media only screen and (min-width: 768px) {
-  section div {
+  section .form-container {
     width: 100%;
     flex-direction: row;
   }
@@ -62,8 +93,14 @@ form {
   justify-content: center;
   position: relative;
 }
+@media only screen and (min-width: 768px) {
+  .input-container {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
 .input-container .input {
-  width: 150px;
+  width: 180px;
   height: 80px;
   padding: 10px;
   margin: 0 auto;
@@ -84,6 +121,12 @@ form {
   font-family: "Poppins", sans-serif;
   font-size: 30px;
   color: #FFB700;
+}
+
+.cupon-input::placeholder {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .button {
@@ -119,6 +162,14 @@ form {
     width: 50%;
     height: 100%;
   }
+}
+
+.cupon-description {
+  font-family: "Poppins", sans-serif;
+  color: #666B6A;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
 }
 
 /*# sourceMappingURL=discount.css.map */

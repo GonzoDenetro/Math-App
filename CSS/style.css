@@ -4,9 +4,35 @@
   box-sizing: border-box;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   font-family: "Poppins", sans-serif;
   text-align: center;
+}
+
+.nav {
+  width: 100%;
+  padding: 10px;
+}
+.nav__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.nav__container--item {
+  list-style: none;
+}
+.nav__container--item a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #FFB700;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
 }
 
 .figures-container {

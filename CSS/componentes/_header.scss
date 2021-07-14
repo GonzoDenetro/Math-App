@@ -1,4 +1,26 @@
+header {
+    display: flex;
+    flex-direction: column;
+}
 h1 {
     font-family: $font;
     text-align: center;
+}
+.nav {
+    width: 100%;
+    padding: 10px;
+    &__container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        &--item {
+            list-style: none;
+            a {
+                text-decoration: none;
+                font-family: $font;
+                color: $orange;
+                @include font-size(14px)
+            }
+        }
+    }
 }

@@ -7,7 +7,10 @@ section {
     height: 100%;
     padding: 20px;
     background-color: $orange;
-    div {
+    @include media(tablet) {
+        height: 100vh;
+    }
+    .form-container {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -43,8 +46,12 @@ form {
     display: flex;
     justify-content: center;
     position: relative;
+    @include media(tablet){
+        width: 60%;
+        margin: 0 auto;
+    }
     .input {
-        width: 150px;
+        width: 180px;
         height: 80px;
         padding: 10px;
         margin: 0 auto;
@@ -64,6 +71,10 @@ form {
         font-size: 30px;
         color: $orange
     }
+}
+
+.cupon-input::placeholder {
+    @include font-size(16px)
 }
 .button {
     width: 120px;
@@ -91,4 +102,9 @@ form {
         width: 50%;
         height: 100%;
     }
+}
+.cupon-description {
+    font-family: $font;
+    color: $gray;
+    @include font-size(12px);
 }

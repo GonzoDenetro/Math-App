@@ -14,9 +14,16 @@
     <body>
         <header>
             <h1>Math App</h1>
+            <nav class="nav">
+                <ul class="nav__container">
+                    <li class="nav__container--item"><a href="figuras.html">Geometría</a></li>
+                    <li class="nav__container--item"><a href="#">Media, moda y mediana</a></li>
+                    <li class="nav__container--item"><a href="#">Salarios</a></li>
+                </ul>
+            </nav>
         </header>
         <section>
-            <div>
+            <div class="form-container">
                 <form >
                     <label for="product_price" class="input_label">Precio de tu producto</label>
                     <div class="input-container">
@@ -28,7 +35,12 @@
                         <input type="number" id="product_discount" class="input">
                         <span>%</span>    
                     </div>
+                    <label for="cupon" class="input_label">Cupón</label>
+                    <div class="input-container">
+                        <input type="text" id="cupon" class="input cupon-input" placeholder="Código de descuento">    
+                    </div>
                     <button class="button" type="button" onclick="calcularPrecio()">Calcular Precio</button>
+                    <span class="cupon-description">*El cupón "$Pr3mio" agrega un 10% extra</span>
                 </form>
                 <div class="result-container">
                     <p id="resultado"></p>
