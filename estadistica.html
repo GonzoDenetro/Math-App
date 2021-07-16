@@ -17,6 +17,61 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <section class="statistics-container">
+            <div class="statistics average-box">
+                <div class="statistics__header">
+                    <h2 class="statistics__header--title">Media o Promedio</h2>
+                </div>
+                <form class="statistics__form">
+                    <label for="promedio_input" class="statistics__form--label">Introduce tu conjunto de números para calcular el promedio</label>
+                    <div class="statistics__inputs-container">
+                        <input type="text" name="" id="promedio_input" class="statistics__input" placeholder="Ej. 1, 2, 3..">
+                    </div>
+                    <div class="statistics__button-container">
+                        <button type="button" onclick="getAverage()">Calcular</button>
+                    </div>
+                    <div class="statistics__results-container">
+                        <p id="promedio_result" class="statistics__results"></p>
+                    </div>
+                </form>
+            </div>
+            <div class="statistics average-box">
+                <div class="statistics__header">
+                    <h2 class="statistics__header--title">Mediana</h2>
+                </div>
+                <form class="statistics__form">
+                    <label for="mediana_input" class="statistics__form--label">Introduce tu conjunto de números para calcular la mediana</label>
+                    <div class="statistics__inputs-container">
+                        <input type="text" name="" id="mediana_input" class="statistics__input" placeholder="Ej. 1, 2, 3..">
+                    </div>
+                    <div class="statistics__button-container">
+                        <button type="button" onclick="getMedian()">Calcular</button>
+                    </div>
+                    <div class="statistics__results-container">
+                        <p id="mediana_result" class="statistics__results"></p>
+                    </div>
+                </form>
+            </div>
+            <div class="statistics average-box">
+                <div class="statistics__header">
+                    <h2 class="statistics__header--title">Moda</h2>
+                </div>
+                <form class="statistics__form">
+                    <label for="moda_input" class="statistics__form--label">Introduce tu conjunto de números para calcular la moda</label>
+                    <div class="statistics__inputs-container">
+                        <input type="text" name="" id="moda_input" class="statistics__input" placeholder="Ej. 1, 2, 3..">
+                    </div>
+                    <div class="statistics__button-container">
+                        <button type="button" onclick="getModa()">Calcular</button>
+                    </div>
+                    <div class="statistics__results-container">
+                        <p id="moda_result" class="statistics__results"></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
     <script src="estadistica.js"></script>
 </body>
 </html>

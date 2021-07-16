@@ -1,7 +1,13 @@
-const lista = [100, 900, 200, 400, 500];
-const lista2 = [1, 2, 3, 4, 2, 3, 1, 1, 3, 4, 2]
+const average = document.querySelector("#promedio_input");
+const result_average = document.querySelector("#promedio_result");
+const median = document.querySelector("#mediana_input");
+const result_median = document.querySelector("#mediana_result")
+const moda_input = document.querySelector("#moda_input");
+const moda_result = document.querySelector("#moda_result");
+
 //PROMEDIO
-const calcularMedia = (array) => {
+console.group("Promedio")
+const calcularMedia = (iterable) => {
     /* let suma_elementos = 0; 
     for(var i = 0; i < array.length; i++){
         suma_elementos = suma_elementos + array[i];
@@ -11,15 +17,27 @@ const calcularMedia = (array) => {
         /*let suma = valorAcumulado + elemento
         return suma */
     /* }) */
-    
-    let suma_elementos = array.reduce((elemento1, elemento2) => elemento1 + elemento2)
+    let array = iterable.split(", ");
+    console.log(array)
+    let suma_elementos = array.reduce((elemento1, elemento2) => Number(elemento1) + Number(elemento2))
     return promedio = suma_elementos / array.length;
     /* console.log(promedio) */
 }
+console.log(calcularMedia("5, 6, 7, 8, 9"))
+
+function getAverage(){
+    let average_value = average.value;
+    let resultado = calcularMedia(average_value);
+    result_average.innerHTML = `Promedio: ${resultado}`
+}
+console.groupEnd()
 /* calcularMedia(lista) */
 
 //MEDIANA
-function calcularMediana(array){
+console.group("Mediana")
+function calcularMediana(iterable){
+    let array = iterable.split(", ");
+    console.log(array)
     let lista_en_orden = array.sort((a, b) => a - b);
     console.log(lista_en_orden)
     let mitad_lista = parseInt(lista_en_orden.length / 2);
@@ -34,10 +52,19 @@ function calcularMediana(array){
         mediana = lista_en_orden[mitad_lista];
     }
     console.log(mediana)    
+    return mediana
 }
-calcularMediana(lista)
+calcularMediana("5, 6, 4, 7, 8, 9, 12, 10, 11,")
+
+function getMedian(){
+    let median_value = median.value;
+    let result = calcularMediana(median_value);
+    result_median.innerHTML = `Mediana: ${result}`;
+}
+console.groupEnd()
 
 //MODA
+console.group("Moda")
 const repeticion_numeros = {};
 
 const caulcularModa = (iterable) => {
@@ -61,7 +88,8 @@ const caulcularModa = (iterable) => {
             modas.push(menorAmayor[i])
         }
     }
-    if(modas.length > 1) {
+    return modas
+    /* if(modas.length > 1) {
         for(let i = 0; i < modas.length; i++){
             console.log(`La moda es ${modas[i][0]} y se repite ${modas[i][1]} veces`)
         }
@@ -69,10 +97,25 @@ const caulcularModa = (iterable) => {
     else 
     {
         console.log(`La moda es ${modas[0][0]} se repite ${modas[0][1]} veces`)
-    }
+    } */
 
 } 
-caulcularModa("1, 2, 2, 3, 4, 5, 2")
+/* caulcularModa("1, 2, 2, 3, 4, 5, 2") */
+
+function getModa(){
+    let moda_value = moda_input.value;
+    let result = caulcularModa(moda_value);
+    if(result.length > 1) {
+        for(let i = 0; i < result.length; i++){
+           moda_result.innerHTML =`La moda es ${result[i][0]} y se repite ${result[i][1]} veces`;
+        }
+    }
+    else 
+    {
+        moda_result.innerHTML = `La moda es ${result[0][0]} se repite ${result[0][1]} veces`
+    }
+}
+console.groupEnd()
 /* 
 let obj = {}
 function contar(elemento) {
