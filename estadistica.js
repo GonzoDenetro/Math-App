@@ -4,7 +4,8 @@ const median = document.querySelector("#mediana_input");
 const result_median = document.querySelector("#mediana_result")
 const moda_input = document.querySelector("#moda_input");
 const moda_result = document.querySelector("#moda_result");
-
+const media_geometrica = document.querySelector("#media_geometrica_input");
+const media_geometrica_result = document.querySelector("#geometrica_result");
 //PROMEDIO
 console.group("Promedio")
 const calcularMedia = (iterable) => {
@@ -28,7 +29,7 @@ console.log(calcularMedia("5, 6, 7, 8, 9"))
 function getAverage(){
     let average_value = average.value;
     let resultado = calcularMedia(average_value);
-    result_average.innerHTML = `Promedio: ${resultado}`
+    result_average.innerHTML = `Promedio: ${resultado.toFixed(2)}`
 }
 console.groupEnd()
 /* calcularMedia(lista) */
@@ -46,7 +47,7 @@ function calcularMediana(iterable){
     if(lista_en_orden.length % 2 == 0){
         let elemento = lista_en_orden[mitad_lista];
         let elemento2 = lista_en_orden[mitad_lista - 1];
-        mediana = calcularMedia([elemento, elemento2]);
+        mediana = (Number(elemento) + Number(elemento2)) / 2;
     }
     else {
         mediana = lista_en_orden[mitad_lista];
@@ -116,6 +117,23 @@ function getModa(){
     }
 }
 console.groupEnd()
+
+//MEDIA GEOMÉTRICA 
+const calcularMediaGeometrica = iterable =>{
+    let array = iterable.split(", ")
+    let multiplicacion = array.reduce((a, b)=> Number(a) * Number(b));
+    console.log(multiplicacion);
+    let mediaGeometrica = Math.pow(multiplicacion, 1/array.length).toFixed(2);
+    console.log(mediaGeometrica)
+    return mediaGeometrica
+}
+
+
+function getMediaGeometrica(){
+    let media_geometrica_value = media_geometrica.value;
+    let resultado = calcularMediaGeometrica(media_geometrica_value);
+    media_geometrica_result.innerHTML = `Media Geométrica: ${resultado}`
+}
 /* 
 let obj = {}
 function contar(elemento) {
@@ -140,9 +158,3 @@ contar(2, 3, 4, 2) */
 } */
 /* toArray('1, 2, 3')
  */
-function splitear(iterable){
-    let array =[];
-    let numeros = iterable.split(", ")
-    console.log(numeros)
-}
-splitear("1, 2, 3")

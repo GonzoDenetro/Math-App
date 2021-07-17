@@ -93,3 +93,15 @@
         color: $gray;
     }
 }
+.geometrica-box {
+    background-color: $gray;
+    .geometrica-input-container {
+        border: 2px solid rgba($orange, .6);
+        input {
+            color: $white;
+        }
+        ::placeholder{
+            color: $orange;
+        }
+    }
+}

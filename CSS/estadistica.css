@@ -146,4 +146,17 @@ h1 {
   color: #666B6A;
 }
 
+.geometrica-box {
+  background-color: #666B6A;
+}
+.geometrica-box .geometrica-input-container {
+  border: 2px solid rgba(255, 183, 0, 0.6);
+}
+.geometrica-box .geometrica-input-container input {
+  color: #FDFFFF;
+}
+.geometrica-box .geometrica-input-container ::placeholder {
+  color: #FFB700;
+}
+
 /*# sourceMappingURL=estadistica.css.map */

@@ -71,6 +71,23 @@
                     </div>
                 </form>
             </div>
+            <div class="statistics geometrica-box">
+                <div class="statistics__header">
+                    <h2 class="statistics__header--title geometrica-title">Media Geométrica</h2>
+                </div>
+                <form class="statistics__form">
+                    <label for="medaia_geometrica_input" class="statistics__form--label geometrica-label">Introduce tu conjunto de números para calcular la media geométrica</label>
+                    <div class="statistics__inputs-container geometrica-input-container">
+                        <input type="text" name="" id="media_geometrica_input" class="statistics__input" placeholder="Ej. 1, 2, 3..">
+                    </div>
+                    <div class="statistics__button-container">
+                        <button type="button" class="button geometrica-button" onclick="getMediaGeometrica()">Calcular</button>
+                    </div>
+                    <div class="statistics__results-container">
+                        <p id="geometrica_result" class="statistics__results"></p>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <script src="estadistica.js"></script>
