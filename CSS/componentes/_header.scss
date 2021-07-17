@@ -19,7 +19,8 @@ h1 {
                 text-decoration: none;
                 font-family: $font;
                 color: $orange;
-                @include font-size(14px)
+                font-weight: 600;
+                @include font-size(16px)
             }
         }
     }
