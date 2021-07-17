@@ -4,6 +4,8 @@ const median = document.querySelector("#mediana_input");
 const result_median = document.querySelector("#mediana_result")
 const moda_input = document.querySelector("#moda_input");
 const moda_result = document.querySelector("#moda_result");
+const moda_result_one = document.querySelector("#moda_result_1");
+const moda_result_two = document.querySelector("#moda_result_2");
 const media_geometrica = document.querySelector("#media_geometrica_input");
 const media_geometrica_result = document.querySelector("#geometrica_result");
 //PROMEDIO

@@ -47,6 +47,15 @@ h1 {
   gap: 20px;
 }
 
+.statistics-description {
+  font-family: "Poppins", sans-serif;
+  color: #666B6A;
+  text-align: center;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+
 .statistics {
   height: 360px;
   padding: 14px;

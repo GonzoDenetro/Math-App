@@ -10,6 +10,12 @@
     justify-content: center;
     gap: 20px;
 }
+.statistics-description {
+    font-family: $font;
+    color: $gray;
+    text-align: center;
+    @include font-size(18px);
+}
 .statistics {
     height: 360px;
     @include box();
