@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/temperatura.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Math App</h1>
+        <nav class="nav">
+            <ul class="nav__container">
+                <li class="nav__container--item"><a href="descuentos.html">Descuentos</a></li>
+                <li class="nav__container--item"><a href="estadistica.html">Estadística</a></li>
+                <li class="nav__container--item"><a href="#">Salarios</a></li>
+                <li class="nav__container--item"><a href="figuras.html">Geometría</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-temperature">
+        <h2 class="main-title">Conversor de Temperatura</h2>
+        <section class="temperatures-container">
+            <div class="original-temperature-box">
+                <p class="description">Pon el valor de tu temperatura y elige su valor</p>
+                <div>
+                    <input type="number" id="user_value" placeholder="...">
+                    <select name="temperatura" id="temperature_value" class="original-temperature-select">
+                        <option value="C°">C°</option>
+                        <option value="F°">F°</option>
+                        <option value="K°">K°</option>
+                    </select>    
+                </div>
+            </div>
+            <div class="new-temperature-box">
+                <p class="description">Elige a que temperatura quieres lo quieres pasar</p>
+                <div>
+                    <p id="result" class="result-temperature"></p>
+                <select name="temperatura" id="temperatura_convertir" class="result-select">
+                    <option value="C°">C°</option>
+                    <option value="F°">F°</option>
+                    <option value="K°">K°</option>
+                </select>    
+                </div>
+            </div>
+            <button type="button" onclick="getTemperature()">Convertir</button>
+        </section>
+    </main>
+    <script src="temperatura.js"></script>
+</body>
+</html>

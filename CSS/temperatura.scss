@@ -1,0 +1,126 @@
+@import "./componentes/breakpoints";
+@import "./componentes/config";
+@import "./componentes/header";
+
+.main-temperature {
+    background-color: $black;
+}
+.main-title {
+    margin: 24px 0; 
+    font-family: $font;
+    color: $white;
+    text-align: center;
+    position: relative;
+    @include font-size(28px)
+}
+.temperatures-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include media(tablet){
+        height: 100vh;
+        flex-direction: row;
+    }
+}
+.original-temperature-box {
+    margin-left: 0;
+    padding: 10px 10px 14px 10px;
+    background-color: $orange;
+    @include media(tablet){
+        width: 50%;
+        height: 100vh;
+    }
+    div {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        @include media(tablet){
+            margin: 80px auto;
+        }
+        input {
+            width: 200px;
+            height: 150px;
+            padding: 4px;
+            text-align: center;
+            background: none;/* 
+            border: 2px solid rgba($gray, .3); */
+            border-radius: 5px;
+            border: none;
+            border-bottom: 2px solid $gray;
+            color: $gray;
+            font-family: $font;
+            outline: none;
+            @include font-size(76px);
+        }
+    }
+}
+.original-temperature-select {
+    background: none;
+    border: none;
+    font-family: $font;
+    color: $gray;
+    outline: none;
+    @include font-size(60px)
+}
+.new-temperature-box {
+    width: 100%;
+    height: 250px;
+    padding: 8px;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        @include media(tablet){
+            margin-top: 120px;
+        }
+    }
+    background: $white;
+    @include media(tablet){
+        width: 50%;
+        height: 100vh;
+    }
+}
+.result-temperature {
+    width: 200px;
+    margin-right: 10px;
+    color: $orange;
+    font-family: $font;
+    text-align: center;
+    @include font-size(70px)
+}
+.result-select {
+    @extend .original-temperature-select;
+    color: $orange;
+}
+.description {
+    margin: 20px 0;
+    font-family: $font;
+    color: $gray;
+    text-align: center;
+    @include font-size(16px);
+}
+button {
+    width: 150px;
+    height: 40px;
+    padding: 6px 12px;
+    display: inline-block;
+    margin: 24px auto;
+    background: $orange;
+    border: none;
+    border-radius: 20px;
+    color: $black;
+    font-family: $font;
+    font-weight: bold;
+    @include font-size(24px);
+    @include media(tablet){
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+    }
+} 

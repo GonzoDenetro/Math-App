@@ -1,0 +1,197 @@
+/* Media Queries Mixin
+**********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.nav {
+  width: 100%;
+  padding: 10px 6px;
+}
+.nav__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.nav__container--item {
+  list-style: none;
+}
+.nav__container--item a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #FFB700;
+  font-weight: 600;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+
+.main-temperature {
+  background-color: #2F2F2F;
+}
+
+.main-title {
+  margin: 24px 0;
+  font-family: "Poppins", sans-serif;
+  color: #FDFFFF;
+  text-align: center;
+  position: relative;
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 2.625rem;
+}
+
+.temperatures-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 768px) {
+  .temperatures-container {
+    height: 100vh;
+    flex-direction: row;
+  }
+}
+
+.original-temperature-box {
+  margin-left: 0;
+  padding: 10px 10px 14px 10px;
+  background-color: #FFB700;
+}
+@media only screen and (min-width: 768px) {
+  .original-temperature-box {
+    width: 50%;
+    height: 100vh;
+  }
+}
+.original-temperature-box div {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+@media only screen and (min-width: 768px) {
+  .original-temperature-box div {
+    margin: 80px auto;
+  }
+}
+.original-temperature-box div input {
+  width: 200px;
+  height: 150px;
+  padding: 4px;
+  text-align: center;
+  background: none;
+  /* 
+  border: 2px solid rgba($gray, .3); */
+  border-radius: 5px;
+  border: none;
+  border-bottom: 2px solid #666B6A;
+  color: #666B6A;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  font-size: 76px;
+  font-size: 4.75rem;
+  line-height: 7.125rem;
+}
+
+.original-temperature-select, .result-select {
+  background: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  color: #666B6A;
+  outline: none;
+  font-size: 60px;
+  font-size: 3.75rem;
+  line-height: 5.625rem;
+}
+
+.new-temperature-box {
+  width: 100%;
+  height: 250px;
+  padding: 8px;
+  background: #FDFFFF;
+}
+.new-temperature-box div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+@media only screen and (min-width: 768px) {
+  .new-temperature-box div {
+    margin-top: 120px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .new-temperature-box {
+    width: 50%;
+    height: 100vh;
+  }
+}
+
+.result-temperature {
+  width: 200px;
+  margin-right: 10px;
+  color: #FFB700;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 70px;
+  font-size: 4.375rem;
+  line-height: 6.5625rem;
+}
+
+.result-select {
+  color: #FFB700;
+}
+
+.description {
+  margin: 20px 0;
+  font-family: "Poppins", sans-serif;
+  color: #666B6A;
+  text-align: center;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  padding: 6px 12px;
+  display: inline-block;
+  margin: 24px auto;
+  background: #FFB700;
+  border: none;
+  border-radius: 20px;
+  color: #2F2F2F;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+@media only screen and (min-width: 768px) {
+  button {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+  }
+}
+
+/*# sourceMappingURL=temperatura.css.map */
