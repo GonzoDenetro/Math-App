@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Media Queries Mixin
+**********************/
+main {
+  background-color: #2F2F2F;
+}
+
+.title-section {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  color: #FFB700;
+  font-size: 55px;
+  font-size: 3.4375rem;
+  line-height: 5.15625rem;
+}
+@media only screen and (min-width: 768px) {
+  .title {
+    letter-spacing: 10px;
+    font-size: 100px;
+    font-size: 6.25rem;
+    line-height: 9.375rem;
+  }
+}
+.title-description {
+  font-family: "Poppins", sans-serif;
+  color: #666B6A;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 2.34375rem;
+}
+@media only screen and (min-width: 768px) {
+  .title-description {
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-size: 1.875rem;
+    line-height: 2.8125rem;
+  }
+}
+
+.subtitle {
+  font-family: "Poppins", sans-serif;
+  color: rgba(255, 183, 0, 0.6);
+  font-size: 35px;
+  font-size: 2.1875rem;
+  line-height: 3.28125rem;
+}
+@media only screen and (min-width: 768px) {
+  .subtitle {
+    letter-spacing: 6px;
+    font-size: 60px;
+    font-size: 3.75rem;
+    line-height: 5.625rem;
+  }
+}
+
+.topics-section {
+  width: 100%;
+  padding: 20px;
+}
+
+.topics-title {
+  margin-bottom: 20px;
+  color: #FFB700;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+@media only screen and (min-width: 768px) {
+  .topics-title {
+    font-size: 34px;
+    font-size: 2.125rem;
+    line-height: 3.1875rem;
+  }
+}
+
+.topics-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .topics-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: repeat(2, 1fr);
+    gap: 8px;
+  }
+}
+
+.topic-box {
+  margin-bottom: 20px;
+  display: block;
+  padding: 8px;
+  min-width: 220px;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid #FFB700;
+  text-decoration: none;
+}
+@media only screen and (min-width: 768px) {
+  .topic-box {
+    margin-bottom: 0;
+  }
+}
+.topic-box__title {
+  font-family: "Poppins", sans-serif;
+  color: #FFB700;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+.fa-dollar-sign,
+.fa-percentage,
+.fa-shapes,
+.fa-temperature-high,
+.fa-chart-bar {
+  margin-bottom: 20px;
+  font-size: 180px;
+  color: #FFB700;
+}
+
+/*# sourceMappingURL=main.css.map */

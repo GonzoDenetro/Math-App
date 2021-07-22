@@ -1,0 +1,91 @@
+@import "./componentes/config";
+@import "./componentes/breakpoints";
+
+main {
+    background-color: $black;
+}
+.title-section {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.title {
+    font-family: $font;
+    color: $orange;
+    @include font-size(55px);
+    @include media(tablet){
+        letter-spacing: 10px;
+        @include font-size(100px)
+    }
+    &-description {
+        font-family: $font;
+        color: $gray;
+        @include font-size(25px);
+        @include media(tablet){
+            letter-spacing: 4px;
+            @include font-size(30px)
+        }
+    }
+}
+.subtitle {
+    font-family: $font;
+    color: rgba($orange, .6);
+    @include font-size(35px);
+    @include media(tablet){
+        letter-spacing: 6px;
+        @include font-size(60px)
+    }
+}
+.topics-section{
+    width: 100%;
+    padding: 20px;
+}
+.topics-title {
+    margin-bottom: 20px;
+    color: $orange;
+    font-family: $font;
+    @include font-size(24px);
+    @include media(tablet){
+        @include font-size(34px)
+    }
+}
+.topics-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media(tablet){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row: repeat(2, 1fr);
+        gap: 8px;
+    }
+}
+.topic-box {
+    margin-bottom: 20px;
+    display: block;
+    padding: 8px;
+    min-width: 220px;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid $orange;
+    text-decoration: none;
+    @include media(tablet){
+        margin-bottom: 0;
+    }
+    &__title {
+        font-family: $font;
+        color: $orange;
+        font-weight: 400;
+        letter-spacing: 4px;
+        @include font-size(20px);
+    }
+}
+.fa-dollar-sign,
+.fa-percentage,
+.fa-shapes,
+.fa-temperature-high,
+.fa-chart-bar {
+    margin-bottom: 20px;
+    font-size: 180px;
+    color: $orange;
+}
