@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Media Queries Mixin
+**********************/
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.nav {
+  width: 100%;
+  padding: 10px 6px;
+}
+.nav__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.nav__container--item {
+  list-style: none;
+}
+.nav__container--item a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #FFB700;
+  font-weight: 600;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+
+section {
+  padding: 20px;
+}
+
+.profits-form {
+  min-width: 280px;
+  margin: 20px auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #FFB700;
+  border-radius: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .profits-form {
+    width: 650px;
+    height: 500px;
+    justify-content: center;
+  }
+}
+
+.input_label, .profits_result {
+  font-family: "Poppins", sans-serif;
+  color: #666B6A;
+  text-align: center;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+@media only screen and (min-width: 768px) {
+  .input_label, .profits_result {
+    font-size: 40px;
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+  }
+}
+
+.input {
+  width: 220px;
+  height: 40px;
+  margin: 20px 0;
+  padding: 4px 16px;
+  border: 2px solid #FFB700;
+  border-radius: 40px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  color: #FFB700;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+@media only screen and (min-width: 768px) {
+  .input {
+    width: 440px;
+    height: 75px;
+    padding: 8px 40px;
+    font-size: 40px;
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+  }
+}
+
+.button {
+  width: 120px;
+  height: 30px;
+  margin: 20px 0;
+  padding: 0 12px;
+  background-color: #FFB700;
+  border: none;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #FDFFFF;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+@media only screen and (min-width: 768px) {
+  .button {
+    width: 160px;
+    height: 40px;
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 2.625rem;
+  }
+}
+
+.profits_result {
+  color: #2F2F2F;
+}
+
+/*# sourceMappingURL=salary.css.map */

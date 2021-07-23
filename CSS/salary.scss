@@ -1,0 +1,71 @@
+@import "./componentes/config";
+@import "./componentes/breakpoints";
+@import "./componentes/header";
+
+section {
+    padding: 20px;
+}
+.profits-form {
+    min-width: 280px;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid $orange;
+    border-radius: 10px;
+    @include media(tablet){
+        width: 650px;
+        height: 500px;
+        justify-content: center;
+    }
+}
+.input_label {
+    font-family: $font;
+    color: $gray;
+    text-align: center;
+    @include font-size(24px);
+    @include media(tablet){
+        @include font-size(40px)
+    }
+}
+.input {
+    width: 220px;
+    height: 40px;
+    margin: 20px 0;
+    padding: 4px 16px;
+    border: 2px solid $orange;
+    border-radius: 40px;
+    outline: none;
+    font-family: $font;
+    color: $orange;
+    @include font-size(20px);
+    @include media(tablet){
+        width: 440px;
+        height: 75px;
+        padding: 8px 40px;
+        @include font-size(40px)
+    }
+}
+.button {
+    width: 120px;
+    height: 30px;
+    margin: 20px 0;
+    padding: 0 12px;
+    background-color: $orange;
+    border: none;
+    border-radius: 20px;
+    font-family: $font;
+    font-weight: bold;
+    color: $white;
+    @include font-size(18px);
+    @include media(tablet){
+        width: 160px;
+        height: 40px;
+        @include font-size(28px)
+    }
+}
+.profits_result {
+    @extend .input_label;
+    color: $black;
+}

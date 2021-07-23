@@ -48,3 +48,22 @@ function Top10SalariosSplice(array) {
     console.log(medianaTop10)
 }
 Top10SalariosSplice(salariosMexAscendente)
+
+//Ganancias 
+const incomes = document.querySelector("#incomes_input");
+const expenses = document.querySelector("#expenses_input");
+const result = document.querySelector("#result");
+
+const calculateProfits = (incomes, expenses) =>  ganancia = incomes - expenses;
+
+function getProfits(){
+    let incomes_value = incomes.value;
+    let expenses_value = expenses.value;
+    let ganancia = calculateProfits(incomes_value, expenses_value);
+    if(ganancia < 0) {
+        result.innerHTML = `Tienes perdidas de $${ganancia}`; 
+    }
+    else {
+        result.innerHTML = `Tienes ganancias de $${ganancia}`;
+    }
+}
